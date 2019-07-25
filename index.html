@@ -2,7 +2,7 @@
 <style>
 #chartdiv {
   width: 100%;
-height:100%;
+height:550px;
 }
 </style>
 
@@ -123,7 +123,22 @@ chart.data = [
 			  { name: "Ginting", value: 1 }
 			  ]
 			},
-			{ name: "Raja Nairasaon", value: 1 },
+			{ name: "Raja Nairasaon",
+			  children: [
+			  { name: "Raja Marpodang",
+				children: [
+				{ name: "Sitorus", value: 1 },
+				{ name: "Sirait", value: 1 },
+				{ name: "Butar-butar", value: 1 }
+				]
+			  },
+			  { name: "Raja Mangatur",
+				children: [
+				{ name: "Manurung", value: 1 }
+				]
+			  }
+			  ]
+			},
 			{ name: "Tuan Sorbadibanua", value: 1 }
 			]
 		  },
