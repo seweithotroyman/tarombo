@@ -16,7 +16,6 @@ Highcharts.addEvent(
             i = 0,
             nodes = {};
         e.options.data.forEach(function (link) {
-
             if (link[0] === 'Raja Batak') {
                 nodes['Raja Batak'] = {
                     id: 'Raja Batak',
@@ -38,13 +37,11 @@ Highcharts.addEvent(
                 };
             }
         });
-
         e.options.nodes = Object.keys(nodes).map(function (id) {
             return nodes[id];
         });
     }
 );
-
 Highcharts.chart('container', {
     chart: {
         type: 'networkgraph',
@@ -75,14 +72,58 @@ Highcharts.chart('container', {
             ['Raja Batak', 'Raja Isombaon'],
 			['Guru Tatea Bulan', 'Raja Uti'],
 			['Guru Tatea Bulan', 'Tuan Saribu Raja'],
+			['Tuan Saribu Raja', 'Si Raja Lontung'],
+			['Si Raja Lontung', 'Tuan Situmorang'],
+			['Tuan Situmorang', 'Lumban Pande'],
+			['Tuan Situmorang', 'Lumban Nahor'],
+			['Tuan Situmorang', 'Suhutni Huta'],
+			['Tuan Situmorang', 'Siringoringo'],
+			['Tuan Situmorang', 'Sitohang'],
+			['Tuan Situmorang', 'Padang'],
+			['Tuan Situmorang', 'Solin'],
+			['Si Raja Lontung', 'Sinaga Raja'],
+			['Sinaga Raja', 'Simanjorang'],
+			['Sinaga Raja', 'Simandalahi'],
+			['Sinaga Raja', 'Barutu'],
+			['Si Raja Lontung', 'Pandiangan'],
+			['Pandiangan', 'Pakpahan'],
+			['Pandiangan', 'Gultom'],
+			['Pandiangan', 'Sidari'],
+			['Pandiangan', 'Sitinjak'],
+			['Pandiangan', 'Harianja'],
+			['Si Raja Lontung', 'Toga Nainggolan'],
+			['Toga Nainggolan', 'Parhusip'],
+			['Toga Nainggolan', 'Lumban Tungkup'],
+			['Toga Nainggolan', 'Lumban Siantar'],
+			['Toga Nainggolan', 'Hutabalian'],
+			['Toga Nainggolan', 'Lumban Raja'],
+			['Toga Nainggolan', 'Pusuk'],
+			['Toga Nainggolan', 'Buaton'],
+			['Toga Nainggolan', 'Nahulea'],
+			// Batas
+			['Si Raja Lontung', 'Simatupang'],
+			['Si Raja Lontung', 'Aritonang'],
+			['Si Raja Lontung', 'Siregar'],
+			['Tuan Saribu Raja', 'Si Raja Borbor'],
 			['Guru Tatea Bulan', 'Limbong Maulana'],
+			['Limbong Maulana', 'Palu Onggang'],
+			['Limbong Maulana', 'Langgat Limbong'],
 			['Guru Tatea Bulan', 'Sagala Raja'],
+			['Sagala Raja', 'Hutaruar'],
+			['Sagala Raja', 'Hutabagas'],
+			['Sagala Raja', 'Hutaurat'],
 			['Guru Tatea Bulan', 'Silau Raja'],
+			['Silau Raja', 'Malau'],
+			['Silau Raja', 'Manik'],
+			['Silau Raja', 'Ambarita'],
+			['Silau Raja', 'Gurning'],
 			['Raja Isombaon', 'Tuan Sori Mangaraja'],
+			['Tuan Sori Mangaraja', 'Op. Raja Nabolon'],
+			['Tuan Sori Mangaraja', 'Raja Namangarerak'],
+			['Tuan Sori Mangaraja', 'Tuan Sobardibanua'],
 			['Raja Isombaon', 'Si Raja Asi-asi'],
 			['Raja Isombaon', 'Sangkar Somalindang']
         ]
     }]
 });
-
 </script>
